@@ -7,17 +7,9 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
 export default defineConfig({
-  base: "/https://mojjitto.github.io/Mojito//",
-  plugins: [react(), tailwindcss(), viteSingleFile()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
-  },
-});
-// https://vite.dev/config/
-export default defineConfig({
+  base: "/Mojito/", 
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
     alias: {
